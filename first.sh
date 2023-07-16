@@ -7,4 +7,5 @@ echo "Source list configuration was done..."
 sudo apt-get update && apt-get upgrade -y | echo "[Update & Upgrade done]"
 sudo apt-get install wget -y
 sudo wget -q -O - https://archive.kali.org/archive-key.asc | sudo apt-key add
+sudo apt-get update | apt-get autoremove | apt-get autoclean
 echo "apt-key configuration was done..."
